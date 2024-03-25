@@ -1,0 +1,935 @@
+.logo {
+    display: inline-block;
+    margin-left: 55px;
+    font-size: 32px;
+    font-weight: 500;
+   color:black;
+    
+}
+
+
+.logoSelect{
+    color: black;
+
+}
+
+.logo a:hover{
+    color: #054fb9;
+    cursor: pointer;
+    font-weight: 600;
+
+    
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+
+.mainNav {
+    display: inline-block;
+    background-color: aqua;
+    margin-right: 55px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 32px;
+   
+}
+
+.navButton{
+    color:black;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+#aboutmeButton li{
+    color: #054fb9;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#myworkButton{
+    color: #054fb9;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+.navButton:hover{
+    color: #054fb9;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+ul {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100vw;
+
+}
+
+.hero {
+    margin-top: 257px;
+    display: flex;
+}
+
+.topSection{
+    margin-top: 257px;
+
+}
+
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contact {
+    border-style: solid;
+    padding: 13px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.contact:hover{
+    border-style: solid;
+    padding: 13px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00022D;
+    transition: all .5s ease;
+    color: white;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    padding: 0;
+    margin: 0px 0px 0px 80px;
+   
+
+
+}
+
+.wrap{
+    color: black;
+}
+
+.tagLine {
+    font-size: 24px;
+    max-width: 50%;
+    margin: 0px 0px 0px 80px;
+    font-weight: 400;
+
+}
+
+.quoteContainer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.quote {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: right;
+    font-style: italic;
+    max-width: 50%;
+    margin: 100px 80px 100px 0px;
+
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0px 0px 0px 80px;
+}
+
+
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .8s;
+    border-color: #054fb9;
+    border-width: 2px;
+        background: linear-gradient(
+            -45deg,
+            #ffffff,
+            #ffe4e9,
+            #8eb8ff,
+            #d5f9ff
+        );
+        background-size: 400% 400%;
+        animation: gradient 9s ease infinite;
+        
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+
+.footer {
+    color: white;
+    align-items: center;
+    height: 40px;
+
+
+    bottom: 0;
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #363535;
+    width: 100vw;
+    margin-top: 100px;
+
+}
+
+.footerCopy {
+    display: flex;
+    align-items: center;
+    margin: 30px 55px 30px 30px;
+    background-color: #363535;
+
+
+
+}
+
+.copyright {
+    margin: 30px 30px 30px 55px;
+}
+
+.footerCopy li {
+    font-size: 16px;
+
+
+}
+
+.title {
+    font-size: 36px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 0px 0px 30px 80px;
+    display: inline-block;
+    text-decoration: underline #054fb9;
+    
+
+
+
+}
+
+br {
+    margin: -10px;
+    padding: -10px;
+}
+
+
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-template-areas: "card1 card2";
+}
+
+#non-profit {
+    grid-area: card1;
+    margin: 30px 25px 30px 80px;
+    border-radius: 4px;
+
+}
+
+#govAgency {
+    grid-area: card2;
+    margin: 30px 80px 30px 25px;
+    border-radius: 4px;
+
+}
+
+#non-profit img {
+    width: 100%;
+}
+
+#govAgency img {
+    width: 100%;
+}
+
+.subTitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3E3E3E;
+    display: inline-block;
+    margin: 10px 0px 30px 30px;
+
+
+}
+
+.description {
+    font-size: 16px;
+    margin: 0 30px 30px 30px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 30px 30px 0px 30px;
+}
+
+.linkedinIcon {
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+
+}
+
+.linkedinIcon:hover {
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform .3s;
+
+
+
+}
+
+
+.govImage {
+    border-radius: 4px 4px 0 0;
+}
+
+.aboutMe {
+    font-size: 32px;
+    margin: 25px 0px 25px 80px;
+    max-width: 100%;
+    font-weight: 400;
+    background-color: indigo;
+
+}
+
+.aboutmeContainer{
+    background-color: brown;
+    
+}
+
+
+
+.resume {
+    border-style: solid;
+    padding: 13px 16px;
+    border-radius: 4px;
+    border-color: black;
+    margin: 300px 50px 150px 80px;
+    background-color: #00022D;
+   max-width: 198px;
+   max-height: 65px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.resume:hover{
+    border-style: solid;
+    padding: 13px 16px;
+    border-radius: 4px;
+    border-color: black;
+    margin: 300px 50px 150px 80px;
+    background-color: #00022D;
+   max-width: 198px;
+   max-height: 65px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.downloadArrow{
+    max-width: 16px;
+    max-height: 20px;
+    margin: 0px 0px 0px 20px;
+
+}
+
+.profilePic {
+    display: inline-block;
+    max-width: 75%;
+    
+    
+}
+
+.meContainer {
+    display: inline-block;
+    background-color: pink;
+    max-width: 50%;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.meContainer div{
+ text-align: left;
+ width: 50%;
+ margin: 0 auto;
+
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    grid-template-areas: "smallCard1 smallCard2 smallCard3 smallCard4";
+    margin: 0 65px 0 65px;
+
+}
+
+.smallCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 15px 30px 15px;
+    background-color: white;
+    
+   
+
+}
+
+.skillTitle {
+    margin: 30px 15px 30px 15px;
+    
+    background-color: white;
+}
+
+.skillDescription {
+    margin: 30px 15px 30px 15px;
+    background-color: white;
+    align-self: flex-end;
+
+
+}
+
+.smallCard section{
+    padding-top: auto;
+    height: 100%;
+    display: flex;
+    background-color: white;
+   
+}
+
+.toolsTitle{
+    font-size: 36px;
+    font-weight: 500;
+    background-color: white;
+    display: inline-block;
+    margin: 4px;
+
+}
+
+.toolsList{
+    margin: 0 0 0 80px;
+    background-color: white;
+    display: block;
+
+}
+
+.toolsList li{
+display: block;
+margin: 0 0 0 0px;
+font-size: 32px;
+font-weight: 400;
+padding: 0;
+
+}
+
+.titleContainer{
+background-color: white;
+display: flex;
+margin: 80px 0 0 80px;
+align-items: center;
+
+}
+
+.toolImage{
+    width: 36px;
+    height: 36px;
+}
+
+.smallCard div{
+    text-align: center;
+    max-height: 100%;
+    background-color: white;
+}
+
+.skillImage{
+    align-self: center;
+    vertical-align: middle;
+    max-height: 40px;
+
+
+}
+
+.interests{
+    margin: 30px 10px 10px 10px;
+    font-size: 36px;
+    font-weight: 500;
+    min-width: 100%;
+}
+
+.interestList li{
+    padding: 0;
+    margin: 5px 10px 5px 10px;
+    display: block;
+}
+
+.leftSide{
+    max-width: 50%;
+    padding: 30px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactCard{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: pink;
+    width: 40%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    top: 400px;
+    left: 30%;
+    padding: 60px 30px;
+    align-items: center;
+    transition: all .5s ease;
+    opacity: 0;
+    justify-content: center;
+   
+}
+
+.active{
+    opacity: 1;
+}
+
+
+#xButton{
+   text-align: right;
+    border-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.halfCard{
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    background-color: aqua;
+    
+    
+    
+    
+   
+}
+
+.cardName{
+font-size: 40px;
+font-weight: 500;
+margin: 0;
+margin-right: 60px;
+text-wrap: nowrap;
+min-width: 60px;
+
+
+
+}
+
+.cardTitle{
+    font-size: 24px;
+    font-weight: 400;
+    margin:0;
+    margin-right: 60px;
+    
+
+}
+
+.xIcon{
+    width: 20px;
+    
+}
+
+.xIcon:hover{
+    border-style: none;
+    padding: none;
+    border-radius: none;
+    cursor: pointer;
+    background-color: none;
+    transition: none;
+    color: black;
+    border-color: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contactLink{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.contactIcon{
+    width: 32px;
+    margin-left: 60px;
+   
+}
+
+.contactItem{
+    margin: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    
+    
+}
+
+#dividerLine{
+    border-right: black 2px solid;
+    
+    
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+    .contactCard{
+    
+        max-width: 1000px;
+    width: 50%;
+    left: 30%;
+}
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+    .smallCard {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px 20px 10px;
+        background-color: white;
+    
+    }
+
+
+.skillsContainer{
+grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-template-areas: "smallCard1 smallCard2" "smallCard3 smallCard4";
+    margin: 0px;
+    }
+
+    .skillTitle {
+        margin: 30px 15px 30px 15px;
+        font-size: 16px;
+        background-color: white;
+    }
+
+    .skillDescription {
+        margin: 30px 15px 30px 15px;
+        background-color: white;
+        align-self: flex-end;
+        font-size: 12px;
+    
+    
+    }
+
+
+    .cardContainer {
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: white;
+        grid-template-areas: "card1" "card2";
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    #non-profit {
+        grid-area: card1;
+        border-radius: 4px;
+        margin: 15px;
+    
+    }
+    
+    #govAgency {
+        grid-area: card2;
+        border-radius: 4px;
+        margin: 15px;
+    
+    }
+
+    h1 {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        padding: 0;
+        margin: 0px 0px 0px 10px;
+       
+    }
+
+
+    .title {
+        font-size: 24px;
+        font-family: "Montserrat";
+        font-weight: 400;
+        margin: 0px 0px 30px 10px;
+        display: inline-block;
+    
+    }
+
+    .tagLine {
+        font-size: 18px;
+        max-width: 100%;
+        margin: 0px 10px 0px 10px;
+        font-weight: 400;
+    
+    }
+
+
+    .quote {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        font-style: italic;
+        max-width: 100%;
+        margin: 30px 10px 50px 10px;
+    
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+        margin: 0px 0px 0px 10px;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 30px 30px 0px 30px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+        font-weight: 400;
+        color: #3E3E3E;
+        display: inline-block;
+        margin: 0px 0px 30px 30px;
+    
+    
+    }
+    
+    .description {
+        font-size: 16px;
+        margin: 0 30px 30px 30px;
+    }
+
+    .hero {
+        margin-top: 257px;
+        flex-direction: column;
+       
+    }
+
+    .leftSide{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .aboutMe {
+        font-size: 16px;
+        margin: 15px 0px 15px 0px;
+        max-width: 100%;
+        font-weight: 400;
+        background-color: indigo;
+    
+    }
+    
+    .aboutmeContainer{
+        background-color: brown;
+        margin: 0;
+        
+    }
+
+    .resume {
+        border-style: solid;
+        padding: 13px 16px;
+        border-radius: 4px;
+        border-color: black;
+        margin: 20px 10px 20px 10px;
+        background-color: #00022D;
+       max-width: 198px;
+       max-height: 65px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+    }
+
+    .meContainer {
+        display: block;
+        background-color: pink;
+        max-width: 100%;
+        padding: 30px;
+        text-align: center;
+    
+    }
+
+    .interests{
+        margin: 30px 10px 10px 10px;
+        font-size: 20px;
+        font-weight: 500;
+        min-width: 100%;
+    }
+    
+    .interestList li{
+        padding: 0;
+        margin: 5px 10px 5px 10px;
+        display: block;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .toolsTitle{
+        font-size: 28px;
+        font-weight: 500;
+        background-color: white;
+        display: inline-block;
+        margin: 4px;
+    
+    }
+    
+    .toolsList{
+        margin: 0 0 0 10px;
+        background-color: white;
+        display: block;
+    
+    }
+    
+    .toolsList li{
+    display: block;
+    margin: 0 0 0 0px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0;
+    
+    }
+    
+    .titleContainer{
+    background-color: white;
+    display: flex;
+    margin: 80px 0 0 10px;
+    align-items: center;
+    
+    }
+    
+    .toolImage{
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+
+
+    
+}
