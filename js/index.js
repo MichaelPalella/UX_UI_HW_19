@@ -6,13 +6,13 @@ $(".contact").click(function () {
     if ($(".contact").hasClass
         ("active")) {
 
-        $(".contactCard").css("opacity", 1);
+        $(".overlayBackground").css("display", "flex");
 
        
 
     } else {
 
-        $(".contactCard").css("opacity", 0);
+        $(".overlayBackground").css("display", "none");
 
        
 

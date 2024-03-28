@@ -113,7 +113,7 @@ body {
 
 }
 
-.contact:hover{
+.mainNav .contact:hover{
     border-style: solid;
     padding: 13px 16px;
     border-radius: 4px;
@@ -126,6 +126,20 @@ body {
     
     
 }
+
+.mainNav .contact:active{
+   
+    background-color: black;
+    transition: all .2s ease;
+    padding: 11px 14px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+
+
+
 
 
 
@@ -219,6 +233,17 @@ h2 {
             background-position: 0% 50%;
         }
     }
+
+
+    .card:active{
+        
+        border-style: solid;
+        border-color: #054fb9;
+        border-width: 2px;
+      
+    }
+    
+
 
 
 
@@ -360,12 +385,12 @@ h3 {
     margin: 25px 0px 25px 80px;
     max-width: 100%;
     font-weight: 400;
-    background-color: indigo;
+    background-color: white;
 
 }
 
 .aboutmeContainer{
-    background-color: brown;
+    background-color: white;
     
 }
 
@@ -404,7 +429,22 @@ h3 {
     font-size: 32px;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform .8s;
 }
+
+.resume:active{
+   
+        background-color: black;
+        transition: all .2s ease;
+        padding: 11px 14px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        
+        
+    
+}
+
+
 
 
 
@@ -424,7 +464,7 @@ h3 {
 
 .meContainer {
     display: inline-block;
-    background-color: pink;
+    background-color: white;
     max-width: 50%;
     padding: 30px;
     text-align: center;
@@ -558,21 +598,32 @@ h4{
 .contactCard{
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: pink;
+    background-color: white;
     width: 40%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 400px;
-    left: 30%;
-    padding: 60px 30px;
+    padding: 45px 30px;
     align-items: center;
     transition: all .5s ease;
-    opacity: 0;
     justify-content: center;
    
 }
+
+.overlayBackground{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height:100vh;
+    width: 100%;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .active{
     opacity: 1;
@@ -588,13 +639,28 @@ h4{
 
 }
 
+
+.dividerLine{
+    border-right: black 1px solid;
+   height: 200px;
+   width: 1px;
+   padding: none;
+   margin: 0 60px 0 60px;
+   
+
+}
+
+
+
+
+
 .halfCard{
     
     display: flex;
     text-align: center;
     flex-direction: column;
     height: auto;
-    background-color: aqua;
+    background-color: white;
     
     
     
@@ -603,10 +669,10 @@ h4{
 }
 
 .cardName{
-font-size: 40px;
+font-size: 36px;
 font-weight: 500;
 margin: 0;
-margin-right: 60px;
+/* margin-right: 60px; */
 text-wrap: nowrap;
 min-width: 60px;
 
@@ -618,26 +684,20 @@ min-width: 60px;
     font-size: 24px;
     font-weight: 400;
     margin:0;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     
 
 }
 
 .xIcon{
     width: 20px;
-    
+    cursor: pointer;
+
 }
 
 .xIcon:hover{
-    border-style: none;
-    padding: none;
-    border-radius: none;
-    cursor: pointer;
-    background-color: none;
-    transition: none;
-    color: black;
-    border-color: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform .8s;
 }
 
 .contactLink{
@@ -649,23 +709,33 @@ min-width: 60px;
 
 .contactIcon{
     width: 32px;
-    margin-left: 60px;
+    cursor: pointer;
+    /* margin-left: 60px; */
    
 }
+
+.contactIcon:hover{
+    
+      transform: scale(1.1);
+    transition: transform .8s;
+
+}
+
+
 
 .contactItem{
     margin: 5px 10px;
     font-size: 16px;
     font-weight: 400;
     padding: 10px;
-    
+    cursor: pointer;
     
 }
 
-#dividerLine{
-    border-right: black 2px solid;
-    
-    
+
+.contactItem:hover{
+    transform: scale(1.05);
+    transition: transform .8s;
 }
 
 
@@ -674,13 +744,111 @@ min-width: 60px;
 @media only screen and (max-width: 1600px) {
     .contactCard{
     
-        max-width: 1000px;
+        max-width: 700px;
+    width: 45%;
+   
+}
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .contactCard{
+    
+        max-width: 700px;
     width: 50%;
-    left: 30%;
+    
+}
+
 }
 
 
+@media only screen and (max-width: 1300px) {
+    .contactCard{
+    
+        max-width: 700px;
+    width: 45%;
+    
+
 }
+
+.cardName{
+font-size: 32px;
+/* margin-right: 30px; */
+
+}
+
+.cardTitle{
+font-size: 20px;
+/* margin-right: 30px; */
+
+}
+
+.contactItem{
+font-size: 14px;
+}
+
+
+.contactIcon{
+    width: 24px;
+    /* margin-left: 30px; */
+}
+
+.dividerLine{
+    margin: 0px 30px 0px 30px;
+
+}
+
+}
+
+
+@media only screen and (max-width: 1060px) {
+    .contactCard{
+    
+        max-width: 1000px;
+    width: 40%;
+    flex-direction: column;
+
+}
+
+.cardName{
+font-size: 32px;
+/* margin-right: 30px; */
+
+}
+
+.cardTitle{
+font-size: 20px;
+/* margin-right: 30px; */
+
+}
+
+.contactItem{
+font-size: 14px;
+}
+
+
+.contactIcon{
+    width: 24px;
+    /* margin-left: 30px; */
+}
+
+.dividerLine{
+    width: 200px;
+   height: 1px;
+   border-bottom: black 2px solid;
+   margin: 30px 0px 30px 0px;
+
+
+}
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -755,7 +923,8 @@ grid-template-rows: 1fr 1fr;
         font-style: normal;
         font-size: 36px;
         padding: 0;
-        margin: 0px 0px 0px 10px;
+        margin: 0px 0px 0px 0px;
+        margin-block-start: 0px;
        
     }
 
@@ -831,12 +1000,12 @@ grid-template-rows: 1fr 1fr;
         margin: 15px 0px 15px 0px;
         max-width: 100%;
         font-weight: 400;
-        background-color: indigo;
+        background-color: white;
     
     }
     
     .aboutmeContainer{
-        background-color: brown;
+        background-color: white;
         margin: 0;
         
     }
@@ -846,7 +1015,7 @@ grid-template-rows: 1fr 1fr;
         padding: 13px 16px;
         border-radius: 4px;
         border-color: black;
-        margin: 20px 10px 20px 10px;
+        margin: 20px 10px 20px 0px;
         background-color: #00022D;
        max-width: 198px;
        max-height: 65px;
@@ -857,9 +1026,16 @@ grid-template-rows: 1fr 1fr;
         font-size: 32px;
     }
 
+    .resume:hover{
+
+        margin: 20px 10px 20px 0px;
+
+    }
+
+
     .meContainer {
         display: block;
-        background-color: pink;
+        background-color: white;
         max-width: 100%;
         padding: 30px;
         text-align: center;
